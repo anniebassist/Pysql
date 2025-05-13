@@ -1,0 +1,22 @@
+generate the open ssh key for github authentication
+
+$ ssh-keygen -t ed25519 -C "annie.bassist@gmail.com"
+
+
+$ eval $(ssh-agent)
+
+$ ssh-add ~/.ssh/id_ed25519
+
+git branch - r
+all remote branches 
+
+
+git branch 
+
+git checkout -b localdev origin/DEV
+git pull
+git commit -m "commited"
+git push 
+
+to ensure local branch is synced to the right remote branch
+ git push origin HEAD:DEV

@@ -1,0 +1,19 @@
+>docker run --name Anirpostgres -e POSTGRES_PASSWORD=admin -p 5431:5432 -v postgres-data:/var/lib/postgresql/data -d postgres
+17825e2b25f09ca2848088ba1f47fcbe0ba458316bb97524e32a7cb170fbecff
+
+C:\Users\annie>docker ps-a
+docker: 'ps-a' is not a docker command.
+See 'docker --help'
+
+C:\Users\annie>docker ps -a
+CONTAINER ID   IMAGE      COMMAND                  CREATED          STATUS          PORTS                    NAMES
+17825e2b25f0   postgres   "docker-entrypoint.s…"   39 seconds ago   Up 37 seconds   0.0.0.0:5431->5432/tcp   Anirpostgres
+
+
+
+both apps in container apps and then use postgresql as URL in the test app
+
+
+https://www.linkedin.com/pulse/configuring-connecting-postgresql-database-docker-dqeze/   -inside the container
+
+Daisy@2027000
