@@ -18,8 +18,6 @@ app=FastAPI(lifespan=lifespan)
 #creation of Band 
 @app.post("/createBand")
 def createBand(bandCreate:BandCreate,session:SessionDep)->Band:
- print(f"Name of band is {bandCreate.name}")
-
  #instantiate Band with bandcreate details
  band=Band(name=bandCreate.name,genre=bandCreate.genre)
  session.add(band)
