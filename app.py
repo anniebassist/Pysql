@@ -34,6 +34,11 @@ def createBand(bandCreate:BandCreate,session:SessionDep)->Band:
 def getConfirmation():
  return "ticket is final"
 
+
+@app.get("/test")
+def getConfirmation():
+ return "check test"
+
 #return albums for a particular band
 @app.get("/getBandbyID/{id}")
 def getBandbyID(id:int,session:SessionDep):
