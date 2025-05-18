@@ -37,7 +37,7 @@ def getConfirmation():
 
 @app.get("/test")
 def getConfirmation():
- return "check test"
+ return "check new test please"
 
 #return albums for a particular band
 @app.get("/getBandbyID/{id}")
