@@ -48,7 +48,7 @@ jobs:
         app-name: 'anirweb'
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_e177def2cca140cda70154845b6d7534 }}
-        images: 'anniebassist/anirapp:latest'
+        images: 'anniebassist/anirapp:${{ github.sha }}'
 
 
 
