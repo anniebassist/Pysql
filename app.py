@@ -35,7 +35,9 @@ def getConfirmation():
  return "ticket is final"
 
 
-
+@app.get("/test")
+def getConfirmation():
+ return "check new test please"
 
 #return albums for a particular band
 @app.get("/getBandbyID/{id}")
