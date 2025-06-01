@@ -8,11 +8,11 @@ from dotenv import load_dotenv,find_dotenv
 #DB_URL1="postgresql://postgres:admin@{CONN}:5432/postgres"
 print(load_dotenv())
 
-DB_USERNAME=os.getenv("DB_USERNAME")
-DB_PASSWORD=os.getenv("DB_PASSWORD")
-DB_URL=os.getenv('DB_URL')
-DB_PORT=os.getenv('DB_PORT')
-DB_NAME=os.getenv('DB_NAME')
+DB_USERNAME=os.getenv("AZURE_POSTGRESQL_USERNAME")
+DB_PASSWORD=os.getenv("AZURE_POSTGRESQL_PASSWORD")
+DB_URL=os.getenv('AZURE_POSTGRESQL_HOST')
+DB_PORT=os.getenv('AZURE_POSTGRESQL_PORT')
+DB_NAME=os.getenv('AZURE_POSTGRESQL_DATABASE')
 
 
 
