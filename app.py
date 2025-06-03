@@ -32,7 +32,7 @@ def createBand(bandCreate:BandCreate,session:SessionDep)->Band:
 
 @app.get("/confirm")
 def getConfirmation():
- return "ticket is final"
+ return "ticket is now confirmed"
 
 
 
